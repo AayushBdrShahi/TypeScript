@@ -350,4 +350,81 @@
 //     return Math.floor(Math.random() *6)+1 as Dice
 // }
 // let result = rolldice()
-// console.log(`The num
+// console.log(`The number is ${result}`)
+
+
+// type Student =  {
+//     theme: "Dark"|"White";
+//     language:"En"|"Sp";
+// }
+// function names(student:Student){
+//     console.log(`${student.language} ${student.theme}`)
+
+// }
+
+// names({theme:"Dark",language:"En"})
+
+
+// type Student = {
+//     name:"Aayush"|"Hari";
+//     caste:"shahi"|"Bahadur";
+// }
+
+// function player(student:Student){
+//     console.log(`My name is ${student.name} ${student.caste}`)
+// }
+
+// player({name:"Aayush",caste:"shahi"})
+
+
+/////// Nullable types
+
+// function check(name:string|null|undefined){
+//     if(typeof name === "string"){
+//         console.log(`${name}`)
+//     }
+//     else if(name === null){
+//         console.log("The value is null")
+//     }
+//     else{
+//         console.log("The value is undefined")
+//     }
+// }
+
+// check("Aayush")
+// check(null)
+// check(undefined)
+
+
+///Optional Chainning
+
+// let user ={
+//     name:"Aayush",
+//     address:{
+//         city:"KTM",
+//         postalCode:33404,
+//     }
+// }
+// let city = user?.address.postalCode
+// console.log(city)
+
+
+
+// let user ={
+//     name:"aayush",
+//     address: function(){
+//         return {
+//             city:"KTM"
+//         }
+//     }
+// }
+
+// let city = user?.address?.().city
+// console.log(city)
+
+let user = [
+    {name:"Dave"}
+];
+
+let userName = user[0]?.name
+console.log(userName)
